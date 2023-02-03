@@ -10,21 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/cs/style.css">
+    <script src="assets/js/german-words.js"></script>
     <title>Speed Typing - in German</title>
 </head>
 
 <body>
 
-    <header>
-        <hi class="header">Speed Typing - in German</hi>
-    </header>
+    <header class="header">Speed Typing - in German</header>
     <div class="instruction-dropdown">
-        <button class="btn--instruction"></i>Instructions</button>
+        <button data type ="instruction" class="btn--instruction">Instructions</button>
             <div class="instruction-content">
                 <p>Type as many words as you can in 60 seconds!<br>
             Get a score and try and beat it!</p>
             </div>
-        <button class="btn--start">Start Button</button>
+        <button data type = submit class="btn--start">Start Button</button>
     </div>
     
     <div class="timer" id="timer">0</div>
@@ -36,12 +35,12 @@
         <textarea class="word-input" id="wordInput" autofocus></textarea>
     </div>
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="scores">Correct Letters typed <span id="score">0</span></p>
+        <p class="scores">Incorrect letters typed <span id="incorrect">0</span></p>
 
     </div>
     <script src="assets/js/script.js"></script>
 </body>
-<footer></footer>
+
 
 </html>

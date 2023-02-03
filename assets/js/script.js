@@ -1,6 +1,4 @@
 
-
-
 /** The main game - calling the german word when the script is first loaded
  * and after the user's answer has been processed
  
@@ -10,13 +8,10 @@ function runGame () {
 }
 
 function getRandomWord () {
-
 }
 
 function getNewWord () {
-
 }
-
 
 /*Focus on Input Field*/
 
