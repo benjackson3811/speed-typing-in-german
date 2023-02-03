@@ -6,33 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--font awesome and google fonts-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/cs/style.css">
-    <title>Document</title>
+    <title>Speed Typing - in German</title>
 </head>
 
 <body>
 
-    <h1 class="header"></h1>
-    <img class="logo" src="assets/images/Logo.png" alt="logo"> Speed Typing - in German
-
-        <p class="instructions"><i class="fa-solid fa-circle-info"></i>Type as many words as you caan in 60 seconds!</p>
-        <p class="instructions">Get a score and try and beat it!</p>
-            <button class="btn--start">Start Button</button>
-
-    <div class="game-container">
-        <div class="word-display" id="word-display"><i class="fa-solid fa-pen"></i>
-        <span id="word-to-type">Word</span>
-        <p class="mobile-answer">Type your Answer Below</p>
-        </div>
-        </i><textarea class="word-input" id="word-input"></textarea>
+    <header class="header">Speed Typing - in German</header>
+    <div class="instruction-dropdown">
+        <button class="btn--instruction"></i>Instructions</button>
+            <div class="instruction-content">
+                <p>Type as many words as you can in 60 seconds!<br>
+            Get a score and try and beat it!</p>
+            </div>
+        <button class="btn--start">Start Button</button>
     </div>
-
-
+    
+    <div class="timer" id="timer">0</div>
+    <div class="game-container">
+        <div class="word-display" id="wordDisplay">
+            <span id="wordToType">Word</span>
+            <p class="mobile-answer">Type your Answer Below</p>
+        </div>
+        <textarea class="word-input" id="wordInput" autofocus></textarea>
+    </div>
     <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
@@ -40,5 +40,6 @@
     </div>
     <script src="assets/js/script.js"></script>
 </body>
+<footer></footer>
 
 </html>

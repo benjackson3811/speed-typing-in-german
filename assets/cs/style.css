@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #DB4C40;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    top: 1rem;
+    background-color:#F0C987;
+    padding: 1rem;
+}
+
+/**Instructions and Start Button and detail**/
+
+.instruction-dropdown {
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 5rem;
+    font-weight: 5rem;
+    }
+
+.btn--instruction, .btn--start {
+    background-color:#F0C987;
+    font-weight: 2rem;
+}
+
+.instruction-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 1rem;
+}
+
+.instruction-content p {
+    padding: 7.5px 16px;
+    display: block;
+    color: #F0C987;
+    border: solid 2px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.instruction-content p:hover {
+    border-color: #8B1E3F;
+}
+
+.instruction-dropdown:hover .instruction-content {
+    display: block;
+}
+
+.instruction-dropdown:hover .btn--instruction {
+    background-color: #8b1e58F;
+}
+ 
+/** Timer **/
+.timer {
+    position: absolute;
+    top: 16rem;
+    font-size: 2rem;
+    color:#F0C987;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/**Game Container, word display and word to be inputted**/
+
+.game-container {
+    position: absolute;
+    padding:1rem;
+    width: 90%;
+    max-width: 90%;
+    background-color:#F0C987;
+    top: 20rem;
+}
+
+.word-input {
+    width: 100%;
+    height: 7rem;
+    margin: auto;
+    outline: none;
+    padding: .4rem .6rem;
+    font-size: 1rem;
+}
+
+.word-input:focus {
+    border-color: #8B1E3F;
+    border: solid 2px;
+}
+
+/**score area **/
+.score-area {
+    position: absolute;
+    padding:1rem;
+    width: 50%;
+    max-width: 50%;
+    background-color:#F0C987;
+    top: 35rem;
+}
