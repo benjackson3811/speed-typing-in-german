@@ -17,48 +17,33 @@ header {
     top: 1rem;
     background-color:#F0C987;
     padding: 1rem;
+    text-align: center;
+    text-decoration: underline wavy #DB4C40 2px;
 }
 
-/**Instructions and Start Button and detail**/
 
-.instruction-dropdown {
+/**Start Button **/
+
+.button-dropdown {
     padding: 1rem;
     position: absolute;
     text-align: center;
-    top: 5rem;
-    font-weight: 300;
+    top: 9rem;
     }
 
-.btn--instruction, .btn--start {
+    .btn--start {
     background-color:#F0C987;
     font-weight: 300;
+    padding: 20px;
+    font-size: large;
 }
 
-.instruction-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    min-width: 1rem;
-}
 
-.instruction-content p {
-    padding: 7.5px 16px;
-    display: block;
-    color: #F0C987;
-    border: solid 2px;
-    width: 100%;
-    max-width: 100%;
-}
-
-.instruction-content p:hover {
-    border-color: #3C153B;
-}
-
-.instruction-dropdown:hover .instruction-content {
+.button-dropdown:hover {
     display: block;
 }
 
-.instruction-dropdown:hover .btn--instruction {
+.button-dropdown:hover .btn--start {
     background-color: #89BD9E;
 }
  

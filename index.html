@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--google fonts-->
+    <!--google fonts + favicon-->
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.ico">
 
     <link rel="stylesheet" href="assets/cs/style.css">
     <title>Speed Typing - in German</title>
@@ -15,24 +16,19 @@
 
 <body>
 <!-- Header-->
-    <header class="header">Speed Typing - in German</header>
+    <header class="header">Speed Typing - in German
+        <p>Type as many words as you can in 60 seconds!
+        Get a score and try and beat it!</p></header>
 <!-- Instruction and Start Buttons-->
-    <div class="instruction-dropdown">
-        <button class="btn--instruction">Instructions</button>
-            <div class="instruction-content">
-                <p>Type as many words as you can in 60 seconds!<br>
-            Get a score and try and beat it!</p>
-            </div>
+    <div class="button-dropdown">
         <button class="btn--start">Start Button</button>
     </div>
 <!--Timer-->
     <div class="timer">0</div>
 <!--Container Div for Word input and word to type-->    
     <div class="game-container">
-        <div class="word-display">
-            <span id="wordToType"></span>
-        </div>
-        <textarea class="word-input"  id="wordInput" autofocus></textarea>
+        <div class="word-display" id="wordDisplay">word</div>
+        <textarea class="word-input"  id="wordInput" autofocus>wordInput</textarea>
     </div>
 <!-- Scores Area-->
     <div class="score-area">
