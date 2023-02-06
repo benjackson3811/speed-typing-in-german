@@ -72,7 +72,7 @@ header {
     font-weight: bold;
 }
 
-/**Game Container, word display and word to be inputted**/
+/**Game Container, word displayed and word to be inputted**/
 
 .game-container {
     position: absolute;
@@ -106,3 +106,4 @@ header {
     background-color:#F0C987;
     top: 35rem;
 }
+

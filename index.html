@@ -14,8 +14,9 @@
 </head>
 
 <body>
-
+<!-- Header-->
     <header class="header">Speed Typing - in German</header>
+<!-- Instruction and Start Buttons-->
     <div class="instruction-dropdown">
         <button class="btn--instruction">Instructions</button>
             <div class="instruction-content">
@@ -24,20 +25,22 @@
             </div>
         <button class="btn--start">Start Button</button>
     </div>
-    
-    <div class="timer" id="timer">0</div>
+<!--Timer-->
+    <div class="timer">0</div>
+<!--Container Div for Word input and word to type-->    
     <div class="game-container">
-        <div class="word-display" id="wordDisplay">
-            <span id="wordToType">Word</span>
-            <p class="mobile-answer">Type your Answer Below</p>
+        <div class="word-display">
+            <span id="wordToType"></span>
         </div>
-        <textarea class="word-input" id="wordInput" autofocus></textarea>
+        <textarea class="word-input"  id="wordInput" autofocus></textarea>
     </div>
+<!-- Scores Area-->
     <div class="score-area">
         <p class="scores">Correct Letters typed <span id="score">0</span></p>
         <p class="scores">Incorrect letters typed <span id="incorrect">0</span></p>
 
     </div>
+<!--Javascript-->
     <script src="assets/js/german-words.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

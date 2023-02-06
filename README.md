@@ -26,6 +26,13 @@ Speed Typing in German is a speeding typing game designed to provide the user a 
 
 [Features](#features)
 - [header](#header)
+- [Instructions](#instructions)
+- [Game Area](#game-area)
+- [Timer](#timer)
+- [Word to Type](#word-to-type) 
+- [Typed Word](#typed-word)
+- [Responsive Elements](#responsive-elements)
+- [Scores Area](#scores-area) 
 
 [Future-features](#future-features)
 
@@ -100,7 +107,6 @@ incorrect letter in red
 - ### Scores Area 
 * Scores on Individual Words
 * Final Scores - total words/ correct number of individual letter/ incorrect
-### Footer
 <hr>
 
 ### Future-features
@@ -114,6 +120,7 @@ incorrect letter in red
 * [HTML5](https://www.w3schools.com/html/html_intro.asp) - for content and website structure. 
 * [CSS](https://www.w3schools.com/css/css_intro.asp)- for Website styling.
 * [Javascript](https://www.w3schools.com/js/default.asp) - to make the website interactive.
+* [lingua.com](https://lingua.com/pdf/deutsch-text-flughafen.pdf) - Source of German text.
 <hr>
 
 ### Testing
@@ -147,6 +154,7 @@ incorrect letter in red
 
 ### Credits
 - ### Content
+* Used Acradea Building a Speed typing game - https://www.youtube.com/watch?v=yZ93TTdGxa8
 - ### Media
 <hr>
 

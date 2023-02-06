@@ -1,34 +1,49 @@
+// click on start game button
+const startGameButton = document.getElementsByClassName('btn--start');
+const wordInput = document.getElementsByClassName('word-input');
+const splittedGermanWords = germanWords.split(" "); 
+const wordToType = document.getElementById('wordToType')
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    
-    /** Set Const and Let Values */
-    const splitGermanWords = german-words.split(" ");
-
-/** The main game - calling the german word when the script is first loaded
- * and after the user's answer has been processed
- 
- * possibly change the funciton name to word quote */
-function runGame () {
-    /** where to put the word quote function to be created */ 
+function getRandomWord(){
+    return splittedGermanWords[ Math.floor(Math.random() * splittedGermanWords.length)];
 }
 
-function getRandomWord () {
-    return splitGermanWords[ Math.floor(Math.random() * splitGermanWords.lenght)];
+function nextWord() {
+    const word = getRandomWord();
+    wordToType.textContent = word;
 }
 
 console.log(getRandomWord());
 
-function getNewWord () {
-};
+startGameButton.addEventListener('click', function(event){
+    event.preventDefault();
+// show the input field
 
-/*Focus on Input Field*/
+// focus on the input field
+wordInput.focus();
+// show the word
+nextWord();
+// start the timer 
+})
 
-/* Scoring for each correct answer*/
-function incrementScore () {
 
-};
-/* Scoring for each incorrect answer*/
-function incrementIncorrectScore () {
+// When user enters an input
 
-};
+// check if correct
+
+// if correct, add the word to the list with green background
+// add 1 to score
+
+// if incorrect, add the word to the list with redground
+
+// clear user input
+
+// show the next word
+
+//Stats
+
+// Calc the stats
+//check if game has ended
+
+// When Game has ended, alert player to score
+// refresh user page
