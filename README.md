@@ -1,108 +1,154 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+! (Speed Typing in German) - Need picture of the Game title save in brackets
 
-Welcome benjackson3811,
+# (Speed Typing in German)(https://benjackson3811.github.io/speed-typing-in-german/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction
+<hr>
+Speed Typing in German is a speeding typing game designed to provide the user a simple game where they can practise spelling and typing as many German language words as possible in a 60 second period.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
+<hr>
 
-## Gitpod Reminders
+[Introduction](#introduction)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[Table of content](#table-of-content)
 
-`python3 -m http.server`
+[User Experiance](#user-experiance)
+- [Target audience](#target-audience)
+- [User Requirements and Expectations](#user-requirements-and-expectations)
+- [User Stories](#user-stories)
+- [Site Designer Stories](#site-designer-stories)
+- [Site Structure](#site-structure)
 
-A blue button should appear to click: _Make Public_,
+[Design Choices](#design-choices)
 
-Another blue button should appear to click: _Open Browser_.
+[Wireframes](#wire-frames)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+[Features](#features)
+- [header](#header)
 
-A blue button should appear to click: _Make Public_,
+[Future-features](#future-features)
 
-Another blue button should appear to click: _Open Browser_.
+[Technologies used](#technologies-used)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+[Testing](#testing)
+- [Responsive Design](#responsive-design)
+- [Validation Testing](#validation-testing)
+- [Bugs and Errors found](#bugs-and-errors-found)
 
-To log into the Heroku toolbelt CLI:
+[Deployment](#deployment)
+- [Steps](#steps)
+- [Live link](#live-link)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+[Credits](#credits)
+- [Content](#content)
+- [Media](#media)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+[Acknowledgements](#acknowledgments)
 
-------
+<hr>
 
-## Release History
+### User Experiance
+- ### Target audience
+* German Learners
+- ### User Requirements and Expectations
+* A simple and responsive game that lets the user type as many german words as possible in 60 seconds. Secondly, showing immediate feedback if errors as made.
+- ### User Goals
+* I want to be able to navigate through the site smoothly.
+* I want to be able to understand immediately the purpose of the site.
+* I want a new word to type automatically after I have finsihed my previous word.
+* I want to see if I have made any mistake typing the letters of the word
+* I want to see the total number of correct words I have typed.
+* I want to see the total number of incorrect words I have typed.
+- ### Site Designer Goals
+* I want to provide a site for the user where they can practise spelling German Language words for education purposes.
+* I want to create a simple and easy to navigate site.
+* I want the site to provide immediate feedback whether the letters are spelt correctly/ incorrectly.
+* I want the user to be able to start typing directly.
+- ### Site Structure
+* A single page game using Javascript to show;
+- A game area, that shows immediate feedback, 
+- A score area that shows final totals over 60s.
+- A reply button that allows for an immediate restart.
+<hr>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Design Choices
+* Colours used.
+- from [Coolors](https://coolors.co/)
+* Fonts - Poopins from [Google Fonts](https://fonts.google.com/)
+<hr>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Wireframes
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The wireframes for the site were created using [Balsamiq](https://balsamiq.com).
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+They are created for three device types. Mobile, Laptop and Tablet.
+<hr>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Features
+- ### Header
+- ### Instructions
+- ### Game Area
+- ### timer - 60-seconds
+- ### Word to Type 
+word to type - and meaning
+- ### Typed Word
+typed word
+- ### Responsive Elements
+correct letter in green
+incorrect letter in red
+- ### Scores Area 
+* Scores on Individual Words
+* Final Scores - total words/ correct number of individual letter/ incorrect
+### Footer
+<hr>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Future-features
+* A translate of the German words into English
+<hr>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Technologies used
+* [Balsamiq](https://balsamiq.com)
+* [Coolors](https://coolors.co/)
+* [Google Fonts](https://fonts.google.com/)
+* [HTML5](https://www.w3schools.com/html/html_intro.asp) - for content and website structure. 
+* [CSS](https://www.w3schools.com/css/css_intro.asp)- for Website styling.
+* [Javascript](https://www.w3schools.com/js/default.asp) - to make the website interactive.
+<hr>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Testing
+- ### Responsive Design
+-Lighthouse
+- ### Validation Testing
+- Code validation - HTML + CSS
+## Testing user stories. - show how the site meets each story.
+- ### User Goals
+* I want to be able to navigate through the site smoothly.
+* I want to be able to understand immediately the purpose of the site.
+* I want a new word to type automatically after I have finsihed my previous word.
+* I want to see if I have made any mistake typing the letters of the word
+* I want to see the total number of correct words I have typed.
+* I want to see the total number of incorrect words I have typed.
+- ### Site Designer Goals
+* I want to provide a site for the user where they can practise spelling German Language words for education purposes.
+* I want to create a simple and easy to navigate site.
+* I want the site to provide immediate feedback whether the letters are spelt correctly/ incorrectly.
+* I want the user to be able to start typing directly.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- ### Bugs and Errors found
+<hr>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- ### Peer Review
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Deployment
+- ### Steps
+- ### Live link
+<hr>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Credits
+- ### Content
+- ### Media
+<hr>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Acknowledgements
+<hr>
