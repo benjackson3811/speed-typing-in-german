@@ -71,6 +71,9 @@ header {
 .word-display {
     font-size: 3rem;
     text-align: center;
+    width: auto;
+    display: inline-block;
+    padding: 5px;
 }
 
 .word-input {
@@ -80,12 +83,15 @@ header {
     outline: none;
     padding: .4rem .6rem;
     font-size: 1rem;
+    display: inline-block;
 }
 
 .word-input:focus {
     border-color: #8B1E3F;
     border: solid 2px;
 }
+
+
 
 /**score area **/
 .score-area {
