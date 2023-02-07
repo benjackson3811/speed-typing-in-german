@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.ico">
 
-    <link rel="stylesheet" href="assets/cs/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Speed Typing - in German</title>
 </head>
 
@@ -21,14 +21,14 @@
         Get a score and try and beat it!</p></header>
 <!-- Instruction and Start Buttons-->
     <div class="button-dropdown">
-        <button class="btn--start">Start Button</button>
+        <button id="btn--start">Start Button</button>
     </div>
 <!--Timer-->
-    <div class="timer">0</div>
+    <div class="timer" id="timer">0</div>
 <!--Container Div for Word input and word to type-->    
     <div class="game-container">
-        <div class="word-display" id="wordDisplay">word</div>
-        <textarea class="word-input"  id="wordInput" autofocus>wordInput</textarea>
+        <div class="word-display" id="wordDisplay"></div>
+        <textarea class="word-input"  id="wordInput">wordInput</textarea>
     </div>
 <!-- Scores Area-->
     <div class="score-area">
