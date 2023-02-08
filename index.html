@@ -20,29 +20,41 @@
 <!-- Header-->
     <header class="header">Speed Typing - in German
         <p>Type as many words as you can in 60 seconds!
-        Get a score and try and beat it!</p></header>
+</p></header>
 <!-- Instruction and Start Buttons-->
     <div class="button-dropdown">
-        <button id="btn--start">Start Button</button>
-        <button id="btn--returnstart">Return to Start</button>
+        <button id="btn--start" class="startButton show">Start Button</button> 
+        <button id="btn--inst" class="instButton show">Instructions</button> 
+    </div>
+<!--Setting your Level-->
+    <div class="button-level show">
+        <button id="btn--easy" class="easyButton">Easy</button> 
+        <button id="btn--med" class="medButton">Medium</button> 
+        <button id="btn--hard" class="hardButton">Hard</button>     
     </div>
 <!--Timer-->
     <div class="timer" id="timer"></div>
+    <!-- Scores Area -->
+    <div class="currentScore" id="current-score" class="hide">
+        <p class="scores">Correct Letters typed <span id="score">0</span></p>
+    </div>
 <!--Container Div for Word input and word to type-->    
     <div class="game-container">
         <div class="word-display" id="wordDisplay"></div>
-        <textarea class="word-input"  id="wordInput"></textarea>
+        <textarea class="word-input hide" id="wordInput"></textarea>
     </div>
-<!-- Scores Area
-    <div class="score-area">
-        <p class="scores">Correct Letters typed <span id="score">0</span></p>
-        <p class="scores">Incorrect letters typed <span id="incorrect">0</span></p>
-    -->
+<!--Game end Area-->
+    <div class="game-end">
+        <div class="hide"></div>Game Over
+            <ui>Game Stats
+                <li id="finalScore">Final Score</li>
+                <li id="wpm">WPM</li>
+            </ui>
+            <button id="btn--restart" class="hide">Restart</button> 
+        </div>
     </div>
 <!--Javascript-->
     <script src="assets/js/german-words.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-
-
 </html>

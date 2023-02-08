@@ -18,30 +18,29 @@ header {
     background-color:#F0C987;
     padding: 1rem;
     text-align: center;
-    text-decoration: underline wavy #DB4C40 1px;
+    border-bottom: 1px solid #DB4C40;
 }
 
-
-/**Start Button **/
+/**Start + instruction Buttons **/
 
 .button-dropdown {
     padding: 1rem;
     position: absolute;
     text-align: center;
-    top: 9rem;
+    top: 7rem;
     }
 
 #btn--start {
     background-color:#F0C987;
-    font-weight: 400;
-    padding: 20px;
+    font-weight: 200;
+    padding: 10px;
     font-size: large;
 }
 
-#btn--returnstart {
+#btn--inst {
     background-color:#F0C987;
-    font-weight: 400;
-    padding: 20px;
+    font-weight: 200;
+    padding: 10px;
     font-size: large;
 }
 
@@ -53,25 +52,42 @@ header {
     background-color: #89BD9E;
 }
  
+/** Level Buttons **/
+
+.button-level {
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 10rem;
+}
+
+#btn--easy, #btn--med, #btn--hard {
+    background-color:#F0C987;
+    font-weight: 200;
+    padding: 10px;
+    font-size: large;
+}
+
+
 /** Timer **/
 .timer {
     position: absolute;
-    top: 16rem;
+    top: 18rem;
     font-size: 2rem;
-    color:#F0C987;
     padding: 5px;
-    font-weight: bold;
+    font-size:large;
+    background-color: yellow;
 }
 
 /**Game Container, word displayed and word to be inputted**/
 
 .game-container {
     position: absolute;
-    padding:1rem;
+    padding: 0.5rem;
     width: 90%;
     max-width: 90%;
     background-color:#F0C987;
-    top: 20rem;
+    top: 22rem;
 }
 
 .word-display {
@@ -79,7 +95,7 @@ header {
     text-align: center;
     width: auto;
     display: inline-block;
-    padding: 5px;
+    padding: 2.5px;
 }
 
 .word-input {
@@ -87,26 +103,14 @@ header {
     height: 7rem;
     margin: auto;
     outline: none;
-    padding: .4rem .6rem;
-    font-size: 1rem;
+    padding: .2rem .3rem;
+    font-size: 0.75rem;
     display: inline-block;
 }
 
 .word-input:focus {
     border-color: #8B1E3F;
     border: solid 2px;
-}
-
-
-
-/**score area **/
-.score-area {
-    position: absolute;
-    padding:1rem;
-    width: 50%;
-    max-width: 50%;
-    background-color:#F0C987;
-    top: 35rem;
 }
 
 /**Correct Typing**/
@@ -118,4 +122,46 @@ header {
 .incorrect {
     color: red;
     text-decoration: double underline red 2px;
+}
+
+/**In Game scores*/
+
+.currentScore {
+    position: absolute;
+    padding:.2 rem;
+    width: 50%;
+    max-width: 50%;
+    background-color:#F0C987;
+    text-align: center;
+    top: 14rem;
+}
+
+/**finished game score area **/
+.score-area {
+    position: absolute;
+    padding:1rem;
+    width: 50%;
+    max-width: 50%;
+    background-color:#F0C987;
+    top: 16rem;
+}
+
+#scores {
+    background-color:#F0C987;
+    font-weight: 200;
+    padding: 10px;
+    font-size: large;
+}
+
+/**Game End stats**/ 
+
+.game-end {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding:0.5rem;
+    width: 50%;
+    max-width: 50%;
+    background-color:#F0C987;
+    top: 36rem;
 }

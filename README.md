@@ -1,6 +1,6 @@
 ! (Speed Typing in German) - Need picture of the Game title save in brackets
 
-# (Speed Typing in German)(https://benjackson3811.github.io/speed-typing-in-german/)
+# [Speed Typing in German](https://benjackson3811.github.io/speed-typing-in-german/)
 
 ## Introduction
 <hr>
@@ -148,7 +148,7 @@ incorrect letter in red
 - ### Bugs and Errors found
 1) The idea for the render new word function code was taken from https://www.youtube.com/watch?v=yZ93TTdGxa8. The bug found was after the word was successfully typed and new word was rendered, however you have to type the inital word and then the second word.
 this was fixed by adding a section to the formula to change the innerText of the wordDisplay formula showing the '' after the word has been correctly typed.
-![Two Words showing to be inputted](assets/images/readme.md/two-words-to-be-inputted.png)
+![Two Words showing to be inputted](assets/images/readme.md-images/two-words-show-to-be-inputted.png)
 2) The English keyboard is not set up for easy typing of german punctuation - for example on the word Müller. 
 Words that had umlaut were taken out of the german.words.js data source.
 ![Umlaut-error](assets/images/readme.md-images/umlaut-error.png)
