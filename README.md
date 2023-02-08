@@ -80,9 +80,8 @@ Speed Typing in German is a speeding typing game designed to provide the user a 
 <hr>
 
 ### Design Choices
-* Colours used.
-- from [Coolors](https://coolors.co/)
-* Fonts - Poopins from [Google Fonts](https://fonts.google.com/)
+* The colours used in the website were from a palete from [Coolors](https://coolors.co/). The picture were picked because they provided a bright and summmery color scheme.
+* Fonts. The font picked for the website was Poopins from [Google Fonts](https://fonts.google.com/) this was compliment the colours picked.
 <hr>
 
 ### Wireframes
@@ -131,9 +130,13 @@ incorrect letter in red
 ## Testing user stories. - show how the site meets each story.
 - ### User Goals
 * I want to be able to navigate through the site smoothly.
+- This is possible to do through the start button.
 * I want to be able to understand immediately the purpose of the site.
+- Possible through the paragraph instruction below the start button.
 * I want a new word to type automatically after I have finsihed my previous word.
+- Possible to do through the word input file.
 * I want to see if I have made any mistake typing the letters of the word
+- Visible through the word display file.
 * I want to see the total number of correct words I have typed.
 * I want to see the total number of incorrect words I have typed.
 - ### Site Designer Goals
@@ -143,6 +146,14 @@ incorrect letter in red
 * I want the user to be able to start typing directly.
 
 - ### Bugs and Errors found
+1) The idea for the render new word function code was taken from https://www.youtube.com/watch?v=yZ93TTdGxa8. The bug found was after the word was successfully typed and new word was rendered, however you have to type the inital word and then the second word.
+this was fixed by adding a section to the formula to change the innerText of the wordDisplay formula showing the '' after the word has been correctly typed.
+![Two Words showing to be inputted](assets/images/readme.md/two-words-to-be-inputted.png)
+2) The English keyboard is not set up for easy typing of german punctuation - for example on the word Müller. 
+Words that had umlaut were taken out of the german.words.js data source.
+![Umlaut-error](assets/images/readme.md-images/umlaut-error.png)
+3) Favicon. The Favicon added was not loading. This was due to it not having the link added in HTML.
+![favicon-error](assets/images/readme.md-images/favicon-error.png)
 <hr>
 
 - ### Peer Review
@@ -154,7 +165,10 @@ incorrect letter in red
 
 ### Credits
 - ### Content
-* Used Acradea Building a Speed typing game - https://www.youtube.com/watch?v=yZ93TTdGxa8
+* Used for ideas on format and functions.
+- Acradea Building a Speed typing game - https://www.youtube.com/watch?v=yZ93TTdGxa8
+- Web Dev Simpified - https://www.youtube.com/watch?v=R-7eQIHRszQ
+
 - ### Media
 <hr>
 

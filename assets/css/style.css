@@ -18,7 +18,7 @@ header {
     background-color:#F0C987;
     padding: 1rem;
     text-align: center;
-    text-decoration: underline wavy #DB4C40 2px;
+    text-decoration: underline wavy #DB4C40 1px;
 }
 
 
@@ -33,17 +33,23 @@ header {
 
 #btn--start {
     background-color:#F0C987;
-    font-weight: 300;
+    font-weight: 400;
     padding: 20px;
     font-size: large;
 }
 
+#btn--returnstart {
+    background-color:#F0C987;
+    font-weight: 400;
+    padding: 20px;
+    font-size: large;
+}
 
 .button-dropdown:hover {
     display: block;
 }
 
-#btn--start:hover {
+#btn--start:hover #btn--returnstart{
     background-color: #89BD9E;
 }
  
