@@ -1,8 +1,5 @@
 const startGameButton = document.getElementById('btn--start');
 const instructGameButton = document.getElementById('btn--inst');
-const easyGameButton = document.getElementById('btn--easy');
-const mediumGameButton = document.getElementById('btn--med');
-const hardGameButton = document.getElementById('btn--hard');
 const splittedGermanWords = germanWords.split(" "); 
 const wordDisplay = document.getElementById('wordDisplay');
 const input = document.getElementById('wordInput');
@@ -84,9 +81,10 @@ function resetTimer() {
 let difference = null;
 
 function inGameScore() {
-let oldScore = score.innerText;
-score.innerText = ++oldScore;
+let scoreCount = score.innerText;
+score.innerText = ++scoreCount;
 }
+
     
 
 /** Game Finish */
@@ -113,7 +111,7 @@ function wordInspect() {
     // that can be checked against what the user inputs.
     const wordArray = wordDisplay.querySelectorAll('span');
     const inputArray = input.value.split('');
-    let correct = true;
+    let correct
     
     wordArray.forEach((characterSpan,index) => {
         const character = inputArray[index];
@@ -124,16 +122,18 @@ function wordInspect() {
         } else if (character === characterSpan.innerText){
             characterSpan.classList.add('correct');
             characterSpan.classList.remove('incorrect');
+            correct = true;
         } else {
             characterSpan.classList.remove('correct');
             characterSpan.classList.add('incorrect');
             correct = false;
         }
     });
-
+    
     if (correct) nextWord();
-    if (correct) score+1;
-    console.log(score);
+    if (correct) scores+1;
+    console.log(scores);
+    inGameScore();
 }
     
     document.addEventListener('DOMContentLoaded',function(){
