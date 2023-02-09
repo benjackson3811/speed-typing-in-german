@@ -23,35 +23,27 @@
 </p></header>
 <!-- Instruction and Start Buttons-->
     <div class="button-dropdown">
-        <button id="btn--start" class="startButton show">Start Button</button> 
-        <button id="btn--inst" class="instButton show">Instructions</button> 
-    </div>
-<!--Setting your Level-->
-    <div class="button-level show">
-        <button id="btn--easy" class="easyButton">Easy</button> 
-        <button id="btn--med" class="medButton">Medium</button> 
-        <button id="btn--hard" class="hardButton">Hard</button>     
+        <button id="btn--start" class="startButton show" hidden>Start Button</button> 
+        <button id="btn--inst" class="instButton show" hidden>Instructions</button> 
     </div>
 <!--Timer-->
     <div class="timer" id="timer"></div>
     <!-- Scores Area -->
-    <div class="currentScore" id="current-score" class="hide">
-        <p class="scores">Correct Letters typed <span id="score">0</span></p>
+    <div class="currentScore" id="current-score" hidden>
+        <p class="score">Correct words typed <span id="score">0</span></p>
     </div>
 <!--Container Div for Word input and word to type-->    
     <div class="game-container">
         <div class="word-display" id="wordDisplay"></div>
-        <textarea class="word-input hide" id="wordInput"></textarea>
+        <textarea class="word-input hide" id="wordInput" disabled></textarea>
     </div>
 <!--Game end Area-->
-    <div class="game-end">
-        <div class="hide"></div>Game Over
-            <ui>Game Stats
-                <li id="finalScore">Final Score</li>
-                <li id="wpm">WPM</li>
-            </ui>
-            <button id="btn--restart" class="hide">Restart</button> 
-        </div>
+    <div class="game-end" hidden>Game Over
+        <ui>Game Stats
+            <li id="finalScore">Final Score</li>
+            <li id="wpm">WPM</li>
+        </ui>
+        <button id="btn--restart" hidden >Restart</button> 
     </div>
 <!--Javascript-->
     <script src="assets/js/german-words.js"></script>

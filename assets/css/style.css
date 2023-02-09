@@ -73,7 +73,6 @@ header {
 .timer {
     position: absolute;
     top: 18rem;
-    font-size: 2rem;
     padding: 5px;
     font-size:large;
     background-color: yellow;
@@ -87,15 +86,16 @@ header {
     width: 90%;
     max-width: 90%;
     background-color:#F0C987;
-    top: 22rem;
+    top: 20rem;
 }
 
 .word-display {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     width: auto;
     display: inline-block;
     padding: 2.5px;
+    overflow-wrap: break-word;
 }
 
 .word-input {
@@ -106,6 +106,7 @@ header {
     padding: .2rem .3rem;
     font-size: 0.75rem;
     display: inline-block;
+    overflow-wrap: break-word;
 }
 
 .word-input:focus {
@@ -128,12 +129,13 @@ header {
 
 .currentScore {
     position: absolute;
-    padding:.2 rem;
+    font-size: small;
+    padding:0.2rem;
     width: 50%;
     max-width: 50%;
     background-color:#F0C987;
     text-align: center;
-    top: 14rem;
+    top: 12rem;
 }
 
 /**finished game score area **/
@@ -143,7 +145,7 @@ header {
     width: 50%;
     max-width: 50%;
     background-color:#F0C987;
-    top: 16rem;
+    top: 20rem;
 }
 
 #scores {
@@ -163,5 +165,5 @@ header {
     width: 50%;
     max-width: 50%;
     background-color:#F0C987;
-    top: 36rem;
+    top: 26rem;
 }

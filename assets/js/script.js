@@ -7,8 +7,7 @@ const splittedGermanWords = germanWords.split(" ");
 const wordDisplay = document.getElementById('wordDisplay');
 const input = document.getElementById('wordInput');
 const timer = document.getElementById('timer');
-const score = document.getElementById('score');
-const finalScore =document.getElementById('finalScore');
+const scores =document.getElementById('score');
 const wpm = document.getElementById('wpm');
 
 /**Event Listeners */
@@ -21,15 +20,19 @@ input.addEventListener('input',wordInspect);
 
 /**Initalise Game */
 
+document.getElementById('btn--start').hidden = false;
+document.getElementById('btn--inst').hidden = false;
+
 /*startGame Function */
 function startGame(){
     nextWord();
     input.focus();
-    startGameButton.className = 'startButton hide';
-    instructGameButton.className = 'instButton hide';
-    timer.className = 'timer show';
-    timeleft();
-      
+    document.getElementById('btn--start').hidden = true;
+    document.getElementById('btn--inst').hidden = true;    
+    document.getElementById('wordInput').disabled = false;
+    document.getElementById('current-score').hidden = false;
+    startTimer();
+    inGameScore();
 }
 /*Function to create a random word from german-word.js array */
 function getRandomWord(){
@@ -47,41 +50,59 @@ function nextWord(){
     wordDisplay.appendChild(characterSpan);
     });
     input.value = null;
-  
+    wordInspect()
 };
 
 /**Timer */
-let startTime
-function timeleft() {
-    timer.innerHTML = '';
-    startTime = new Date();
-    setInterval(()=>{
-        timer.innerHTML = seconds();
-    },1000)
-    if (timer.innerHTML > 60){
-        clearInterval();
-    }
-};
+let interval = null;
+let time = 0;
 
-/**Date in seconds */
-function seconds() {
-    return Math.floor((new Date()-startTime)/1000)
+function tick() {
+    time += 1;
+    timer.innerHTML = time;
+    if (time >= 60) {
+        stopTimer(); 
+    };
 }
+
+function startTimer() {
+    resetTimer();
+    interval = setInterval(tick, 1000);
+}
+
+function stopTimer() {
+    clearInterval(interval);
+}
+
+function resetTimer() {
+    time = 0;
+}
+
 
 /**Score */ 
+
+let difference = null;
+
 function inGameScore() {
-    score.innerHTML = '';
-    if (score.innerHTML ==''){
-        ++score.innerText;
-    }
-    
+let oldScore = score.innerText;
+score.innerText = ++oldScore;
 }
+    
 
 /** Game Finish */
 
-function gamefinish(){
-    (timer === 60)
+function gameFinish() {
+    if (time === 60) {
+        stopTimer(); 
+        document.getElementById('btn--start').hidden = true;
+        document.getElementById('btn--inst').hidden = true;    
+        document.getElementById('wordInput').disabled = true;
+        document.getElementById('current-score').hidden = true;
+    };
 }
+
+
+
 /** Event Listener/ checking word inputted
  *  to show if the words inputted were correct/ incorrect
  * if correct letter showing green
@@ -111,10 +132,10 @@ function wordInspect() {
     });
 
     if (correct) nextWord();
+    if (correct) score+1;
+    console.log(score);
 }
     
-
-
     document.addEventListener('DOMContentLoaded',function(){
 
     });
