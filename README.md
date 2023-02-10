@@ -25,7 +25,7 @@ Speed Typing in German is a basic speeding typing game. It is designed to provid
 [Wireframes](#wire-frames)
 
 [Features](#features)
-- [header](#header)
+- [Header](#header)
 - [Instructions](#instructions)
 - [Timer](#timer)
 - [Word to Type](#word-to-type) 
