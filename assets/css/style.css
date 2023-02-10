@@ -110,13 +110,15 @@ header {
 }
 
 #instructions {
-    position: absolute;
+    position: fixed;
     font-size: large;
-    width: 60%;
-    max-width: 60%;
-    background-color:white;
+    width: 100%;
+    max-width: 100%;
+    background-color:#F0C987;
     text-align: center;
-    top: 25rem;
+    bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #DB4C40;
 }
 
 #instructions ol {
