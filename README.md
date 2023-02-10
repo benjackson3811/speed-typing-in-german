@@ -1,11 +1,11 @@
-![Speed Typing in German](assets/images/readme.md-images/header.png)
-
 # [Speed Typing in German](https://benjackson3811.github.io/speed-typing-in-german/)
+
+![Speed Typing in German](assets/images/readme.md-images/header.png)
 
 ## Introduction
 Speed Typing in German is a basic speeding typing game. It is designed to provide the user a game where they can practise spelling and typing as many German language words as possible in a 60 second period.
 
-Start your lesson in ![Speed Typing in German](assets/images/readme.md-images/iamresponsive.png)
+![live link to game](assets/images/readme.md-images/iamresponsive.png)
 
 ## Table of Contents
 
@@ -48,40 +48,48 @@ Start your lesson in ![Speed Typing in German](assets/images/readme.md-images/ia
 - [Media](#media)
 
 [Acknowledgements](#acknowledgments)
+
 [Back to top](#content)
 
 <hr>
 
 ### User Experiance
 - ### Target audience
-* German Learners
+* The target audience of the game is German Learners
 - ### User Requirements and Expectations
-* A simple and responsive game that lets the user type as many german words as possible in 60 seconds. Secondly, showing immediate feedback if errors are made.
+* A simple and responsive game that lets the user type as many german words as possible in 60 seconds. 
+* With the immediate feedback if errors are made.
 - ### User Goals
 * I want to be able to navigate through the site smoothly.
-* I want to be able to understand immediately the purpose of the site.
+* I want to understand immediately the purpose of the site.
 * I want a new word to type automatically after I have finsihed my previous word.
-* I want to see if I have made any mistake typing the letters of the word
+* I want to see any mistakes typed.
 - ### Site Designer Goals
-* I want to provide a site for the user where they can practise spelling German Language words for education purposes.
-* I want to create a simple and easy to navigate site.
+* I want to provide an educational site for someone to practise spelling German Language words.
+* I want the site to simple and easy to navigate.
 * I want the site to provide immediate feedback whether the letters are spelt correctly/ incorrectly.
 * I want the user to be able to start typing directly.
+
 - ### Site Structure
-The website is a simple page structured in HTML and CSS. The gamepage is using Javascript for the interactive areas;
+- The website is a single page structured in HTML and CSS. 
+- The gamepage is using Javascript for the interactive areas.
+
 - The single page is split into areas which the user gets visbility off after clicking the start button. 
 - On page load - the user can see the header, start button and footer that shows the instructions.
 - After clicking the start button, the start button and footer are hidden showing the timer, character score, word display and word input areas.
+
 [Back to top](#content)
 
 ### Design Choices
 * The colours used in the website were from a palete from [Coolors](https://coolors.co/). The picture were picked because they provided a bright and summmery color scheme.
 * Fonts. The font picked for the website was Poopins from [Google Fonts](https://fonts.google.com/) this was compliment the colours picked.
+
 [Back to top](#content)
 
 ### Wireframes
+The wireframes for the site were created using [Balsamiq](https://balsamiq.com). 
 
-The wireframes for the site were created using [Balsamiq](https://balsamiq.com). Wireframes were created for Laptop, mobile and tablet screen sizes.
+Wireframes were created for Laptop, mobile and tablet screen sizes.
 ![Laptop Wireframe](assets/images/readme.md-images/laptop-wireframe.png)
 ![Mobile Wireframe](assets/images/readme.md-images/mobile-wireframe.png)
 ![tablet Wireframe](assets/images/readme.md-images/tablet-wireframe.png)
@@ -92,36 +100,46 @@ The wireframes for the site were created using [Balsamiq](https://balsamiq.com).
 Speed Typing in German is set up to basic and be very easy to use. There is a liner user story where the user can see the header, start button and instructions on the page footer. On clicking the start button they see the word displayed to type, a timer and an area where they can type.
 - ### Header
 ![Website Header](assets/images/readme.md-images/header.png)
+
 The Header area shows the game title and the call to arms "Type as many words as you can in 60 seconds'.
 - ### Instructions
 ![Instructions](assets/images/readme.md-images/instructions-footer.png)
-The instructions have been placed in the footer area to provide more space in the screen. The user can see them clearly on going on the page and immediately knew key detaails about the page.
+
+The instructions have been placed in the footer area to provide more space in the screen. The user can see them clearly on going on the page and immediately know kthe game instructions.
 - ### Start Button
 ![Start Button](assets/images/readme.md-images/start-button.png)
+
 The game start button.
 - ### timer - 60-seconds
 ![Timer](assets/images/readme.md-images/timer.png)
+
 Shows the user how much time has passed. Stops on 60 seconds.
 - ### Word to Type 
 ![German Word to Type](assets/images/readme.md-images/word-display.png)
+
 Random words generated for the user to practise their typing. To add added complexitity they are not all capitalised.
 - ### Typed Word
 ![User input](assets/images/readme.md-images/word-input.png)
+
 The area for the user to type the diplayed german word.
 - ### Responsive Elements
 ![Responsive Elements](assets/images/readme.md-images/responsive-elements.png)
+
 The responsive element of the game showing the correct letter in green and the incorrect letter in red.
 - ### Scores Area 
 ![Characters typed](assets/images/readme.md-images/log-of-characters-typed.png)
+
 Shows the total number of characters typed. A score is not logged because of the responsive element of the game, the user can see when they have typed a correct character (through it showing green).
+
 [Back to top](#content)
 
 ### Future-features
 At the minute the game is very basic using basic levels of Jasic script to make the game interactive. Further game functionality that can bee added is.
-- A refresh button.
+- A refresh button - that allows the user to go stright back to the start.
 - A correct/ incorrect score button.
 - A total score button.
-- A translate of the German words displayed into English
+- A translate of the German words displayed into English.
+
 [Back to top](#content)
 
 ### Technologies used
@@ -132,10 +150,12 @@ At the minute the game is very basic using basic levels of Jasic script to make 
 * [CSS](https://www.w3schools.com/css/css_intro.asp)- for Website styling.
 * [Javascript](https://www.w3schools.com/js/default.asp) - to make the website interactive.
 * [lingua.com](https://lingua.com/pdf/deutsch-text-flughafen.pdf) - Source of German text.
+
 [Back to top](#content)
 
 ### Testing
 Please refer to [TESTING.md](TESTING.md).
+
 [Back to top](#content)
 
 ### Deployment
@@ -145,7 +165,20 @@ The site has been deployed into Github. The steps to deploy are;
 2. Once in settngs, navigate to the **pages** tab on the left hand side. 
 3. Click on the source section - below the URL- then click save.
 4. Once the selected, the page will automatically refresh with a detailed ribbon display to indicate the successful deployment.
-- ### Live link(https://benjackson3811.github.io/speed-typing-in-german/)
+
+![How to Deploy](assets/images/readme.md-images/deploy-page-screenshot.png)
+
+ ### How to create a clone of the project 
+The steps to create a copy are;
+1. On the project repository click the Code button.
+2. Click open with GitHub Desktop to clone and open the repository.
+3. Click Choose and navigate to a local path where you want to clone the repository.
+4. Click Clone. 
+
+![How to Clone the project ](assets/images/readme.md-images/Create%20clone%20of%20the%20project.png)
+
+- ### [Live link](https://benjackson3811.github.io/speed-typing-in-german/)
+
 [Back to top](#content)
 
 ### Credits
@@ -167,4 +200,5 @@ The site has been deployed into Github. The steps to deploy are;
 
 ### Acknowledgements
 I would like to thank my mentor Precious Ijege for with patience and practical advise. The tutoring team for the time and explanations of the problems I brought to them.
+
 [Back to top](#content)
