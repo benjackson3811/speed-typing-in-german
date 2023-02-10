@@ -15,42 +15,41 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Speed Typing - in German</title>
 </head>
+
 <body>
-<!-- Header-->
+    <!-- Header-->
     <header class="header">Speed Typing - in German
-        <p>Type as many words as you can in 60 seconds!
-</p></header>
-<!-- Instruction and Start Buttons-->
+        <p>Type as many words as you can in 60 seconds!</p>
+    </header>
+    <!-- Instruction and Start Buttons-->
     <div class="button-dropdown">
-        <button id="btn--start" class="startButton" hidden>Start Button</button> 
+        <button id="btn--start" class="startButton" hidden>Start Button</button>
     </div>
-<!--Timer-->
+    <!--Timer-->
     <div class="timer" id="timer"></div>
     <!-- Scores Area -->
     <div class="currentScore" id="current-score">
         <p class="score">Number of times typed <span id="score">0</span></p>
     </div>
-<!--Container Div for Word input and word to type-->    
+    <!--Container Div for Word input and word to type-->
     <div class="game-container" id="gameContainer" hidden>
         <div class="word-display" id="wordDisplay"></div>
-        <textarea class="word-input capitalize" id="wordInput" disabled ></textarea>
+        <textarea class="word-input capitalize" id="wordInput" disabled></textarea>
     </div>
-<!--Instructions-->
-    <div id="instructions" hidden>
-        <h3> Instructions
-            <ul>
+    <!--Instructions-->
+    <div>
+        <div id="instructions" hidden>
+            <ol>
                 <li>Type as many words as possible in 60 seconds.</li>
-                    <br>
-                <li>Letters you get right turn <span class="correct">Green!</span</li>
-                    <br>
+                <li>Letters you get right turn <span class="correct">Green!</span></li>
                 <li>Letters you type incorrectly turn <span class="incorrect">Red!</span></li>
-                    <br>
                 <li>When the 60 seconds is finished, refresh and try again!</li>
-        </ul>
-        </h3>
+                <ol>
+        </div>
     </div>
-<!--Javascript-->
+    <!--Javascript-->
     <script src="assets/js/german-words.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

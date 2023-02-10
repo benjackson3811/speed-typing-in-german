@@ -112,14 +112,14 @@ header {
 #instructions {
     position: absolute;
     font-size: large;
-    padding:0.2rem;
     width: 60%;
     max-width: 60%;
-    background-color:#F0C987;
+    background-color:white;
     text-align: center;
     top: 25rem;
 }
 
-#instructions ul {
+#instructions ol {
     list-style-type: none;
+    padding: 0;
 }
