@@ -1,11 +1,11 @@
 const startGameButton = document.getElementById('btn--start');
-const instructGameButton = document.getElementById('btn--inst');
 const splittedGermanWords = germanWords.split(" "); 
+const gameContainer = document.getElementById('gamecontainer')
 const wordDisplay = document.getElementById('wordDisplay');
 const input = document.getElementById('wordInput');
 const timer = document.getElementById('timer');
 const scores =document.getElementById('score');
-const wpm = document.getElementById('wpm');
+const insructions =document.getElementById('instructions');
 
 /**Event Listeners */
 
@@ -18,19 +18,25 @@ input.addEventListener('input',wordInspect);
 /**Initalise Game */
 
 document.getElementById('btn--start').hidden = false;
-document.getElementById('btn--inst').hidden = false;
+document.getElementById('current-score').hidden = true;
+document.getElementById('gameContainer').hidden = true;
+document.getElementById('instructions').hidden =false;
+
+
+
 
 /*startGame Function */
 function startGame(){
     nextWord();
     input.focus();
-    document.getElementById('btn--start').hidden = true;
-    document.getElementById('btn--inst').hidden = true;    
+    document.getElementById('btn--start').hidden = true;   
     document.getElementById('wordInput').disabled = false;
     document.getElementById('current-score').hidden = false;
+    document.getElementById('gameContainer').hidden = false;
+    document.getElementById('instructions').hidden =true;
     startTimer();
     inGameScore();
-}
+    }
 /*Function to create a random word from german-word.js array */
 function getRandomWord(){
     return splittedGermanWords[ Math.floor(Math.random() * splittedGermanWords.length)];
@@ -86,21 +92,6 @@ score.innerText = ++scoreCount;
 }
 
     
-
-/** Game Finish */
-
-function gameFinish() {
-    if (time === 60) {
-        stopTimer(); 
-        document.getElementById('btn--start').hidden = true;
-        document.getElementById('btn--inst').hidden = true;    
-        document.getElementById('wordInput').disabled = true;
-        document.getElementById('current-score').hidden = true;
-    };
-}
-
-
-
 /** Event Listener/ checking word inputted
  *  to show if the words inputted were correct/ incorrect
  * if correct letter showing green

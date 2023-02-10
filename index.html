@@ -23,19 +23,30 @@
 </p></header>
 <!-- Instruction and Start Buttons-->
     <div class="button-dropdown">
-        <button id="btn--start" class="startButton show" hidden>Start Button</button> 
-        <button id="btn--inst" class="instButton show" hidden>Instructions</button> 
+        <button id="btn--start" class="startButton" hidden>Start Button</button> 
     </div>
 <!--Timer-->
     <div class="timer" id="timer"></div>
     <!-- Scores Area -->
-    <div class="currentScore" id="current-score" hidden>
-        <p class="score">Correct words typed <span id="score">0</span></p>
+    <div class="currentScore" id="current-score">
+        <p class="score">Number of times typed <span id="score">0</span></p>
     </div>
 <!--Container Div for Word input and word to type-->    
-    <div class="game-container">
+    <div class="game-container"id="gameContainer" hidden>
         <div class="word-display" id="wordDisplay"></div>
-        <textarea class="word-input" id="wordInput" disabled></textarea>
+        <textarea class="word-input capitalize" id="wordInput" disabled ></textarea>
+    </div>
+<!--Instructions-->
+    <div id="instructions" hidden>
+        <h3> Instructions
+            <p>Type as many words as possible in 60 seconds.</p>
+            <br>
+            <p>Letters you get right turn <span class="correct">Green!</span></p>
+            <br>
+            <p>Letters you type incorrectly turn <span class="incorrect">Red!</span></p>
+            <br>
+            <p>When the 60 seconds is finished, refresh and try again!</p>
+        </h3>
     </div>
 <!--Javascript-->
     <script src="assets/js/german-words.js"></script>

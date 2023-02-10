@@ -14,7 +14,7 @@ body {
 /*Header*/
 header {
     position: fixed;
-    top: 1rem;
+    top: 3rem;
     background-color:#F0C987;
     padding: 1rem;
     text-align: center;
@@ -27,7 +27,7 @@ header {
     padding: 1rem;
     position: absolute;
     text-align: center;
-    top: 7rem;
+    top: 12rem;
     }
 
 #btn--start {
@@ -37,45 +37,13 @@ header {
     font-size: large;
 }
 
-#btn--inst {
-    background-color:#F0C987;
-    font-weight: 200;
-    padding: 10px;
-    font-size: large;
-}
-
-.button-dropdown:hover {
-    display: block;
-}
-
-#btn--start:hover #btn--returnstart{
-    background-color: #89BD9E;
-}
- 
-/** Level Buttons **/
-
-.button-level {
-    padding: 1rem;
-    position: absolute;
-    text-align: center;
-    top: 10rem;
-}
-
-#btn--easy, #btn--med, #btn--hard {
-    background-color:#F0C987;
-    font-weight: 200;
-    padding: 10px;
-    font-size: large;
-}
-
-
 /** Timer **/
 .timer {
     position: absolute;
     top: 18rem;
     padding: 5px;
-    font-size:large;
-    background-color: yellow;
+    font-size:x-large;
+    color:#F0C987;
 }
 
 /**Game Container, word displayed and word to be inputted**/
@@ -114,6 +82,9 @@ header {
     border: solid 2px;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
 /**Correct Typing**/
 
 .correct {
@@ -129,7 +100,7 @@ header {
 
 .currentScore {
     position: absolute;
-    font-size: small;
+    font-size: 0.75rem;
     padding:0.2rem;
     width: 50%;
     max-width: 50%;
@@ -138,32 +109,14 @@ header {
     top: 12rem;
 }
 
-/**finished game score area **/
-.score-area {
+#instructions {
     position: absolute;
-    padding:1rem;
-    width: 50%;
-    max-width: 50%;
+    font-size: small;
+    padding:0.2rem;
+    width: 60%;
+    max-width: 60%;
     background-color:#F0C987;
-    top: 20rem;
+    text-align: center;
+    top: 25rem;
 }
 
-#scores {
-    background-color:#F0C987;
-    font-weight: 200;
-    padding: 10px;
-    font-size: large;
-}
-
-/**Game End stats**/ 
-
-.game-end {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    padding:0.5rem;
-    width: 50%;
-    max-width: 50%;
-    background-color:#F0C987;
-    top: 26rem;
-}
