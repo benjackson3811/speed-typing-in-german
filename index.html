@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Speed Typing - in German</title>
 </head>
-
 <body>
 <!-- Header-->
     <header class="header">Speed Typing - in German
@@ -32,20 +31,22 @@
         <p class="score">Number of times typed <span id="score">0</span></p>
     </div>
 <!--Container Div for Word input and word to type-->    
-    <div class="game-container"id="gameContainer" hidden>
+    <div class="game-container" id="gameContainer" hidden>
         <div class="word-display" id="wordDisplay"></div>
         <textarea class="word-input capitalize" id="wordInput" disabled ></textarea>
     </div>
 <!--Instructions-->
     <div id="instructions" hidden>
         <h3> Instructions
-            <p>Type as many words as possible in 60 seconds.</p>
-            <br>
-            <p>Letters you get right turn <span class="correct">Green!</span></p>
-            <br>
-            <p>Letters you type incorrectly turn <span class="incorrect">Red!</span></p>
-            <br>
-            <p>When the 60 seconds is finished, refresh and try again!</p>
+            <ul>
+                <li>Type as many words as possible in 60 seconds.</li>
+                    <br>
+                <li>Letters you get right turn <span class="correct">Green!</span</li>
+                    <br>
+                <li>Letters you type incorrectly turn <span class="incorrect">Red!</span></li>
+                    <br>
+                <li>When the 60 seconds is finished, refresh and try again!</li>
+        </ul>
         </h3>
     </div>
 <!--Javascript-->

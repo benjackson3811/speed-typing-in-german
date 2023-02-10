@@ -111,7 +111,7 @@ header {
 
 #instructions {
     position: absolute;
-    font-size: small;
+    font-size: large;
     padding:0.2rem;
     width: 60%;
     max-width: 60%;
@@ -120,3 +120,6 @@ header {
     top: 25rem;
 }
 
+#instructions ul {
+    list-style-type: none;
+}

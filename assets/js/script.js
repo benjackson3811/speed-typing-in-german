@@ -1,6 +1,6 @@
 const startGameButton = document.getElementById('btn--start');
 const splittedGermanWords = germanWords.split(" "); 
-const gameContainer = document.getElementById('gamecontainer')
+const gameContainer = document.getElementById('gamecontainer');
 const wordDisplay = document.getElementById('wordDisplay');
 const input = document.getElementById('wordInput');
 const timer = document.getElementById('timer');
@@ -40,12 +40,12 @@ function startGame(){
 /*Function to create a random word from german-word.js array */
 function getRandomWord(){
     return splittedGermanWords[ Math.floor(Math.random() * splittedGermanWords.length)];
-    };
+    }
 
 /*Creating a new word for the DOM inner text */
 
 function nextWord(){
-    let word = getRandomWord()
+    let word = getRandomWord();
     wordDisplay.innerText ='';
     word.split('').forEach(character =>{
     const characterSpan = document.createElement('span');
@@ -53,8 +53,8 @@ function nextWord(){
     wordDisplay.appendChild(characterSpan);
     });
     input.value = null;
-    wordInspect()
-};
+    wordInspect();
+}
 
 /**Timer */
 let interval = null;
@@ -65,7 +65,7 @@ function tick() {
     timer.innerHTML = time;
     if (time >= 60) {
         stopTimer(); 
-    };
+    }
 }
 
 function startTimer() {
@@ -83,9 +83,6 @@ function resetTimer() {
 
 
 /**Score */ 
-
-let difference = null;
-
 function inGameScore() {
 let scoreCount = score.innerText;
 score.innerText = ++scoreCount;
@@ -102,7 +99,7 @@ function wordInspect() {
     // that can be checked against what the user inputs.
     const wordArray = wordDisplay.querySelectorAll('span');
     const inputArray = input.value.split('');
-    let correct
+    let correct;
     
     wordArray.forEach((characterSpan,index) => {
         const character = inputArray[index];
